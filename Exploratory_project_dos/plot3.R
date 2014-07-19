@@ -8,7 +8,7 @@ library(ggplot2)
 # 1999–2008? Use the ggplot2 plotting system to make a plot answer this question.
 
 # Read in the PM2.5 data.
-# NEI <- readRDS("summarySCC_PM25.rds")
+NEI <- readRDS("summarySCC_PM25.rds")
 
 # This data is not needed for this plot.
 # SCC <- readRDS("Source_Classification_Code.rds")
