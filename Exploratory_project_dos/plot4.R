@@ -54,14 +54,14 @@ names(sub_data) <- c('Year','Emissions','EI.Sector')
 # Plot the yearly totals for emissions by type as a line graph, with points. Set the title
 # and the y-axis label
 print(qplot(Year,Emissions, data = sub_data, facets = .~EI.Sector, geom = c('smooth', 'point')
-            , main = 'US Coal Combustion Relation Emissions per Year by EI.Sector', ylab = expression(Total~PM[2.5]~(tons))))
+            , main = 'US Coal Combustion Related Emissions per Year by EI.Sector', ylab = expression(Total~PM[2.5]~(tons))))
 
 # Open the PNG device and create a file with the given name and dimensions.
 png('plot4.png',height = 480, width = 600, units = 'px')
 
 # Plot the graph, as above
 print(qplot(Year,Emissions, data = sub_data, facets = .~EI.Sector, geom = c('smooth', 'point')
-            , main = 'US Coal Combustion Relation Emissions per Year by EI.Sector', ylab = expression(Total~PM[2.5]~(tons))))
+            , main = 'US Coal Combustion Related Emissions per Year by EI.Sector', ylab = expression(Total~PM[2.5]~(tons))))
 
 # Close the PNG device and recieve our file.
 dev.off()
